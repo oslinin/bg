@@ -1,1 +1,0 @@
-This is a Hardhat 3 and Next.js project.
