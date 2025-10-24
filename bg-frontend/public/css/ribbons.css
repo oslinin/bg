@@ -1,0 +1,104 @@
+/*
+ *  GitHub Ribbons
+ *  http://github.com/blog/273-github-ribbons
+ *  http://unabridged.github.com/github-ribbons/
+ *
+ */
+
+.github-fork-ribbon-wrapper {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.github-fork-ribbon-wrapper.right {
+    right: 0;
+}
+
+.github-fork-ribbon-wrapper.left {
+    left: 0;
+}
+
+.github-fork-ribbon-wrapper.right-bottom {
+    position: fixed;
+    top: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.github-fork-ribbon-wrapper.left-bottom {
+    position: fixed;
+    top: auto;
+    left: 0;
+    bottom: 0;
+}
+
+.github-fork-ribbon {
+    background-color: #f80;
+    background-color: rgba(255, 136, 0, 0.8);
+    position: absolute;
+    padding: 7px 0;
+    top: 42px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    pointer-events: auto;
+}
+
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+    right: -43px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.github-fork-ribbon-wrapper.left .github-fork-ribbon {
+    left: -43px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {
+    top: auto;
+    right: -43px;
+    bottom: 42px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
+    top: auto;
+    left: -43px;
+    bottom: 42px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.github-fork-ribbon a {
+    color: #000;
+    color: rgba(0,0,0,0.85);
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px dashed #fff;
+    border: 1px dashed rgba(255,255,255,0.7);
+    padding: 2px 0;
+    width: 200px;
+    display: block;
+}

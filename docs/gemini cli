@@ -1,0 +1,11 @@
+https://github.com/google-gemini/gemini-cli
+
+npm uninstall -g @google/gemini-cli
+npm install -g @google/gemini-cli
+
+rm -rf ~/.gemini
+gemini login
+
+export GOOGLE_CLOUD_PROJECT="my-project-id"
+export GEMINI_API_KEY="your_api_key_from_aistudio.google.com"
+gemini -y

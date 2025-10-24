@@ -1,0 +1,530 @@
+/*
+ * backgammon.css
+ *
+ * Main stylesheet for the backgammon.js client
+ *
+ * http://www.backgammon.js.org
+ * https://github.com/quasoft/backgammonjs
+ *
+ * Copyright (c) 2016, Quasoft
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
+body {
+  background: url(../images/background-photo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.board-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1024px;
+  height: 800px;
+}
+
+.board-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 800px;
+  background-image: url("../img/board.png");
+  z-index: 0;
+}
+
+.point {
+  position: absolute;
+  width: 64px;
+  height: 320px;
+}
+
+.point-top {
+  top: 0;
+  background-image: url("../img/point-top.png");
+}
+
+.point-bottom {
+  bottom: 0;
+  background-image: url("../img/point-bottom.png");
+}
+
+.point-0 {
+  left: 896px;
+}
+
+.point-1 {
+  left: 832px;
+}
+
+.point-2 {
+  left: 768px;
+}
+
+.point-3 {
+  left: 704px;
+}
+
+.point-4 {
+  left: 640px;
+}
+
+.point-5 {
+  left: 576px;
+}
+
+.point-6 {
+  left: 448px;
+}
+
+.point-7 {
+  left: 384px;
+}
+
+.point-8 {
+  left: 320px;
+}
+
+.point-9 {
+  left: 256px;
+}
+
+.point-10 {
+  left: 192px;
+}
+
+.point-11 {
+  left: 128px;
+}
+
+.point-12 {
+  left: 128px;
+}
+
+.point-13 {
+  left: 192px;
+}
+
+.point-14 {
+  left: 256px;
+}
+
+.point-15 {
+  left: 320px;
+}
+
+.point-16 {
+  left: 384px;
+}
+
+.point-17 {
+  left: 448px;
+}
+
+.point-18 {
+  left: 576px;
+}
+
+.point-19 {
+  left: 640px;
+}
+
+.point-20 {
+  left: 704px;
+}
+
+.point-21 {
+  left: 768px;
+}
+
+.point-22 {
+  left: 832px;
+}
+
+.point-23 {
+  left: 896px;
+}
+
+.piece {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+}
+
+.piece-white {
+  background-image: url("../img/piece-white.png");
+}
+
+.piece-black {
+  background-image: url("../img/piece-black.png");
+}
+
+.piece-point-top {
+}
+
+.piece-point-bottom {
+}
+
+.piece-bar-top {
+  top: 256px;
+  left: 512px;
+}
+
+.piece-bar-bottom {
+  bottom: 256px;
+  left: 512px;
+}
+
+.piece-home-top {
+  top: 0;
+  left: 960px;
+}
+
+.piece-home-bottom {
+  bottom: 0;
+  left: 960px;
+}
+
+.dice {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+}
+
+.dice-0 {
+  top: 368px;
+  left: 320px;
+}
+
+.dice-1 {
+  top: 368px;
+  left: 448px;
+}
+
+.dice-2 {
+  top: 368px;
+  left: 576px;
+}
+
+.dice-3 {
+  top: 368px;
+  left: 704px;
+}
+
+.dice {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.dice-digit-1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-2::before,
+.dice-digit-2::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.dice-digit-2::before {
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-2::after {
+  bottom: 25%;
+  right: 25%;
+  transform: translate(50%, 50%);
+}
+
+.dice-digit-3::before,
+.dice-digit-3::after,
+.dice-digit-3 span {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.dice-digit-3::before {
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-3::after {
+  bottom: 25%;
+  right: 25%;
+  transform: translate(50%, 50%);
+}
+
+.dice-digit-3 span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-4::before,
+.dice-digit-4::after,
+.dice-digit-4 span::before,
+.dice-digit-4 span::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.dice-digit-4::before {
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-4::after {
+  top: 25%;
+  right: 25%;
+  transform: translate(50%, -50%);
+}
+
+.dice-digit-4 span::before {
+  bottom: 25%;
+  left: 25%;
+  transform: translate(-50%, 50%);
+}
+
+.dice-digit-4 span::after {
+  bottom: 25%;
+  right: 25%;
+  transform: translate(50%, 50%);
+}
+
+.dice-digit-5::before,
+.dice-digit-5::after,
+.dice-digit-5 span,
+.dice-digit-5 span::before,
+.dice-digit-5 span::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.dice-digit-5::before {
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-5::after {
+  top: 25%;
+  right: 25%;
+  transform: translate(50%, -50%);
+}
+
+.dice-digit-5 span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-5 span::before {
+  bottom: 25%;
+  left: 25%;
+  transform: translate(-50%, 50%);
+}
+
+.dice-digit-5 span::after {
+  bottom: 25%;
+  right: 25%;
+  transform: translate(50%, 50%);
+}
+
+.dice-digit-6::before,
+.dice-digit-6::after,
+.dice-digit-6 span::before,
+.dice-digit-6 span::after,
+.dice-digit-6 i::before,
+.dice-digit-6 i::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.dice-digit-6::before {
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-6::after {
+  top: 25%;
+  right: 25%;
+  transform: translate(50%, -50%);
+}
+
+.dice-digit-6 span::before {
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-digit-6 span::after {
+  top: 50%;
+  right: 25%;
+  transform: translate(50%, -50%);
+}
+
+.dice-digit-6 i::before {
+  bottom: 25%;
+  left: 25%;
+  transform: translate(-50%, 50%);
+}
+
+.dice-digit-6 i::after {
+  bottom: 25%;
+  right: 25%;
+  transform: translate(50%, 50%);
+}
+
+
+.scoreboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 128px;
+  height: 800px;
+  background-color: #222;
+  color: #eee;
+  padding: 10px;
+}
+
+.player-name {
+  font-weight: bold;
+}
+
+.player-home-0 {
+  color: #ff0000;
+}
+
+.player-home-1 {
+  color: #00ff00;
+}
+
+.player-turn {
+  background-color: #444;
+}
+
+.index-view {
+  margin-top: 20px;
+}
+
+.game-result-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.waiting-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding-top: 200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+  .board-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 78.125%; /* 800 / 1024 */
+  }
+
+  .board-background {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+
+  .point {
+    width: 6.25%; /* 64 / 1024 */
+    height: 40%; /* 320 / 800 */
+  }
+
+  .piece {
+    width: 6.25%; /* 64 / 1024 */
+    height: 8%; /* 64 / 800 */
+  }
+
+  .dice {
+    width: 6.25%; /* 64 / 1024 */
+    height: 8%; /* 64 / 800 */
+  }
+
+  .scoreboard {
+    display: none;
+  }
+}

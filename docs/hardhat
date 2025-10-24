@@ -21,13 +21,14 @@ To support these use cases, Hardhat lets you write tests in TypeScript (or JavaS
 TypeScript a better fit for scenarios that depend on realistic transaction flows or blockchain behavior.
 
 
-#Solidity test contractss/Counter.t.sol
+#Solidity test contracts/Counter.t.sol
 pnpm hardhat test
 pnpm hardhat test solidity
+pnpm hardhat test BackgammonELO
 
-#typescript tests
+#typescript tests test/Counter.ts
 pnpm hardhat test nodejs
-
+pnpm hardhat test test/BackgammonELO.ts
 
 #run 
 pnpm hardhat run scripts/send-op-tx.ts
